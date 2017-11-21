@@ -1,0 +1,52 @@
+<!--pages/search/searchDetail/orderNow/orderNow.wxml-->
+
+<view class='orderList'>
+    <text class='code'>编号：1365</text>
+    <text class='h3'>葡萄庄园2</text>
+    <text class='support'>拎包入住</text>
+    <text class='aboutPay'>240元/晚</text>
+</view>
+
+<view class='orderDays'>
+    <image src='/images/order-days.png'></image>
+    <view class='stayDays'>
+        <text>入住日期</text>
+        <picker mode="date" value="{{date}}" start="2012-01-01" end="2050-12-31" bindchange="bindDateChange">
+          <view class="picker borbtm">
+            {{date}}
+          </view>
+        </picker>
+         <text>离开日期</text>
+        <picker mode="date" value="{{date2}}" start="2012-01-01" end="2050-12-31" bindchange="bindDateChangeTwo">
+          <view class="picker">
+            {{date2}}
+          </view>
+        </picker>
+    </view>
+    <view class='orderTotal'>共3晚</view>
+</view>
+
+<view class='orderPrice'>
+    <text>租金单价　　￥210.00元/天</text>
+    <text>应付金额　　￥630.00元/天</text>
+    <text>房东姓名　　王艳艳</text>
+</view>
+
+<view class='orderPrice orderTel'>
+    <label>下单手机号　</label><input value='18288886666'></input>
+</view>
+
+<view class='orderPrice orderPeople'>
+    <label>下单姓名　</label><input value='徐丽'></input>
+</view>
+
+
+<view class='orderSubmit'>
+    <view>
+        <checkbox checked='{{ isAgree }}'></checkbox>
+        我已阅读并同意<text bindtap='dealSkillFn'>《交易规则》</text>
+    </view>
+    <form>
+        <button bindtap=''>提交订单</button>
+    </form>
+</view>

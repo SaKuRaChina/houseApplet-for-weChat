@@ -1,0 +1,20 @@
+<!--pages/search/searchDetail/comment/comment.wxml-->
+
+<view class='comments'>
+    <view class='eachComment clearfix'>
+        <image src='/images/hostImg.jpg'></image>
+        <view class='commentDetail'>
+            <text class='commentName'>风景</text>
+            <text class='commentDate'>2015-09-06 02:51:27</text>
+            <text class='commentText'>跟家人一起来度假来的，房子非常不错，床单干净整洁，床很舒适，而且还配备了自动麻将机，闲暇之余还能跟家人玩会麻将，很是自在</text>
+        </view>
+    </view>
+    <view class='eachComment clearfix'>
+        <image src='/images/hostImg.jpg'></image>
+        <view class='commentDetail'>
+            <text class='commentName'>风景</text>
+            <text class='commentDate'>2015-09-06 02:51:27</text>
+            <text class='commentText'>跟家人一起来度假来的，房子非常不错，床单干净整洁，床很舒适，而且还配备了自动麻将机，闲暇之余还能跟家人玩会麻将，很是自在跟家人一起来度假来的，房子非常不错，床单干净整洁，床很舒适，而且还配备了自动麻将机，闲暇之余还能跟家人玩会麻将，很是自在</text>
+        </view>
+    </view>
+</view>

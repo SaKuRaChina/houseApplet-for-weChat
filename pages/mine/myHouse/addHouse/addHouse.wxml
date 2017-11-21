@@ -1,0 +1,104 @@
+<!--pages/mine/myHouse/addHouse/addHouse.wxml-->
+
+<form class='orderDesc'>
+    <view class='readyTab'>
+        <view class='houseTitle'>
+            <text>房间描述</text>
+        </view>
+        <view class='houseDesc'>
+            <label>　　名称：</label><input value='国贸双井10号线苹果派小区'></input>
+            <picker bindchange="bindTypeChange" value="{{typeIndex}}" range="{{houseTypeArr}}">
+              <view class="picker">
+                <label>房屋类型：</label>{{houseTypeArr[typeIndex]}}
+              </view>
+              <image class='selectIcon' src='/images/selectArrow.png'></image>
+            </picker>
+            <picker bindchange="bindStyleChange" value="{{styleIndex}}" range="{{houseStyleArr}}">
+              <view class="picker">
+                <label>房间格局：</label>{{houseStyleArr[styleIndex]}}
+              </view>
+              <image class='selectIcon' src='/images/selectArrow.png'></image>
+            </picker>
+            <picker bindchange="bindRentChange" value="{{rentIndex}}" range="{{houseRentArr}}">
+              <view class="picker">
+                <label>租金方式：</label>{{houseRentArr[rentIndex]}}
+              </view>
+              <image class='selectIcon' src='/images/selectArrow.png'></image>
+            </picker>
+            <label>　　租金：</label><input value='586元/天'></input>
+            <picker bindchange="bindBedChange" value="{{bedIndex}}" range="{{houseBedArr}}">
+              <view class="picker">
+               <label> 　　床型：</label>{{houseBedArr[bedIndex]}}
+              </view>
+              <image class='selectIcon' src='/images/selectArrow.png'></image>
+            </picker>
+            <picker mode="time" value="{{startTime}}" bindchange="bindTimeChange">
+              <view class="picker">
+                <label>当前选择: </label>{{startTime}}
+              </view>
+              <image class='selectIcon' src='/images/selectArrow.png'></image>
+            </picker>
+            <picker mode="time" value="{{overTime}}" bindchange="bindOverTimeChange">
+              <view class="picker">
+                <label>当前选择: </label>{{overTime}}
+              </view>
+              <image class='selectIcon' src='/images/selectArrow.png'></image>
+           </picker>
+            <picker bindchange="bindLeastChange" value="{{leastIndex}}" range="{{houseLeastArr}}">
+              <view class="picker">
+                <label>最少入住：</label>{{houseLeastArr[leastIndex]}}
+              </view>
+              <image class='selectIcon' src='/images/selectArrow.png'></image>
+            </picker>
+            <picker bindchange="bindInvoiceChange" value="{{invoiceIndex}}" range="{{houseInvoiceArr}}">
+              <view class="picker">
+                <label>　　发票：</label>{{houseInvoiceArr[invoiceIndex]}}
+              </view>
+              <image class='selectIcon' src='/images/selectArrow.png'></image>
+            </picker>
+            <label>　　标语：</label><input value='两市一室一厅'></input>
+            <view class='newImages'>
+                <view  wx:for='{{ tempFilePaths }}'>
+                    <image src='{{ tempFilePaths[index] }}' style='width:220rpx; height:146rpx'></image>
+                </view>
+            </view>
+            <view class='addImg' bindtap='addImgFn'>+</view>
+            <view class='addIDImg'>
+                <text class='IDTitle'>房本照片</text>
+                <view class='addImg' bindtap='addTopImg'>+<text>首页</text></view>
+                <view class='addImg' bindtap='addBottomImg'>+<text>尾页</text></view>
+                <view class='addImg' bindtap='addOtherImg'>+<text>其他页</text></view>
+                <image src='{{ tempTopPaths }}'></image>
+                <image src='{{ tempBottomPaths }}'></image>
+                <image src='{{ tempOtherPaths }}'></image>
+            </view>
+            <label>详细介绍：</label><textarea></textarea>
+            <label>地理位置：</label><input></input>
+            <label>推荐理由：</label><textarea></textarea>
+        </view>
+    </view>
+    <view class='readyTab'>
+        <view class='houseTitle'>
+            <text>配套设施</text>
+        </view>
+        <view class='houseDesc'>
+            <view class='houseFacility'>
+               <checkbox-group>
+                  <label class="checkbox" wx:for="{{ facilityItems }}">
+                      <checkbox value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+                  </label>
+              </checkbox-group>
+            </view>
+        </view>
+    </view>
+    <view class='readyTab'>
+        <view class='houseTitle'>
+            <text>注意事项</text>
+        </view>
+        <view class='houseDesc addNotice'>
+              <textarea></textarea>
+        </view>
+    </view>
+
+    <button>确认提交</button>
+</form>

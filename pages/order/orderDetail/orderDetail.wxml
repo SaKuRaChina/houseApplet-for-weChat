@@ -1,0 +1,130 @@
+<!--pages/order/orderDetail/orderDetail.wxml-->
+<view class='orderList'>
+  <navigator url='/pages/search/searchDetail/searchDetail'>
+    <text class='h3'>葡萄庄园2</text>
+    <text class='code'>编号：1365</text>
+    <text class='aboutPay'>待支付</text>
+    <text class='aboutPay'>已支付</text>
+    <text class='aboutPay'>已结束</text>
+    <view class='proDetail'>
+      <image src='/images/order-img.jpg'></image>
+      <view class='aboutOrder'>
+        <text>订单编号：201706191654165236191654165236</text>
+        <text>下单时间：2017-06-19 16:54:16</text>
+        <text>订单总价：￥630</text>
+      </view>
+      <image src='/images/right-icon.png' class='rightIcon'></image>
+    </view>
+  </navigator>
+</view>
+
+
+<view class='orderDays'>
+    <image src='/images/order-days.png'></image>
+    <view class='stayDays'>
+        <text>入住日期</text>
+        <picker mode="date" value="{{date}}" start="2012-01-01" end="2050-12-31" bindchange="bindDateChange">
+          <view class="picker borbtm">
+            {{date}}
+          </view>
+        </picker>
+         <text>离开日期</text>
+        <picker mode="date" value="{{date2}}" start="2012-01-01" end="2050-12-31" bindchange="bindDateChangeTwo">
+          <view class="picker">
+            {{date2}}
+          </view>
+        </picker>
+    </view>
+    <view class='orderTotal'>共3晚</view>
+</view>
+
+<view class='orderMap'>
+    <text>新世纪百货商店西东兴隆街54号</text>
+    <view>
+        <map id='map' longitude="116.422888" latitude="39.90681" markers="{{markers}}" show-location></map>
+    </view>
+</view>
+
+<view class='orderPrice'>
+    <text>租金单价　　￥210.00元/天</text>
+    <text>应付金额　　￥630.00元/天</text>
+    <text>房东姓名　　王艳艳</text>
+</view>
+
+<view class='orderPrice orderTel'>
+    <text>下单手机号：　18288886666</text>
+</view>
+
+<view class='orderPrice orderPeople'>
+    <text>下单姓名：　　徐丽</text>
+</view>
+
+<view class='orderDesc' wx:if="isReadyPay">
+    <view class='readyTab'>
+        <view class='houseTitle' bindtap='isDesOpenFn'>
+            <text>房间描述</text>
+            <image src='/images/bottomArrow.png' wx:if="{{ isDescOpen }}"></image>
+            <image src='/images/topArrow.png' wx:if="{{ !isDescOpen }}"></image>
+        </view>
+        <view class='houseDesc'>
+            <view class='houseType'>
+                <text>房屋类型：租房</text>
+                <text>房间格局：一室一厅</text>
+                <text>床型：大双人床</text>
+                <text>发票：不提供</text>
+                <text>入住时间：14：00</text>
+                <text>退房时间：12：00</text>
+            </view>
+            <view class='houstPosition'>
+                <text class='positionTitle'>详细介绍</text>
+                <text>交通便利地铁2号、5号、7号直达；适合陪护住宿！ 公寓旅行、就医、就学等条件，适合不同需求！</text>
+            </view>
+            <view class='houstPosition'>
+                <text class='positionTitle'>地理位置</text>
+                <text>新世纪百货商场西东兴隆街54号</text>
+            </view>
+            <view class='houstPosition'>
+                <text class='positionTitle'>推荐理由</text>
+                <text>交通便利地铁2号、5号、7号直达；适合陪护住宿！ 公寓旅行、就医、就学等条件，适合不同需求！</text>
+            </view>
+        </view>
+    </view>
+    <view class='readyTab'>
+        <view class='houseTitle'>
+            <text>配套设施</text>
+            <image src='/images/bottomArrow.png' wx:if="{{ isDescOpen }}"></image>
+            <image src='/images/topArrow.png' wx:if="{{ !isDescOpen }}"></image>
+        </view>
+        <view class='houseDesc'>
+            <view class='houseFacility'>
+               <checkbox-group>
+                  <label class="checkbox" wx:for="{{ facilityItems }}">
+                      <checkbox value="{{item.name}}" checked="{{item.checked}}"  disabled= 'true'/>{{item.value}}
+                  </label>
+              </checkbox-group>
+            </view>
+        </view>
+    </view>
+    <view class='readyTab'>
+        <view class='houseTitle'>
+            <text>注意事项</text>
+            <image src='/images/bottomArrow.png' wx:if="{{ isDescOpen }}"></image>
+            <image src='/images/topArrow.png' wx:if="{{ !isDescOpen }}"></image>
+        </view>
+        <view class='houseDesc'>
+           <text class='notice'>* 我是注意事项</text>
+        </view>
+    </view>   
+</view>
+
+
+<view class='orderSubmit'>
+    <form>
+        <label>填写评价：</label>
+        <textarea></textarea>
+        <button wx:if="{{ !buttonShow }}">立即支付</button>
+        <button wx:if="{{ buttonShow }}" bindtap='orderCancel'>申请取消，并退款</button>
+        <button wx:if="{{ !buttonShow }}">提交评价</button>
+    </form>
+    
+</view>

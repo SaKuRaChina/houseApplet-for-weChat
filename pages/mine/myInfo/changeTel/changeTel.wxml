@@ -1,0 +1,13 @@
+<!--pages/mine/myInfo/changeTel/changeTel.wxml-->
+
+<view class='contain'>
+   <form>
+      <input class='tel' type='number' placeholder='手机号'></input>
+      <image class='telImg' src='/images/mine-a.png'></image>
+      <input class='pass' password placeholder='验证码'></input>
+      <text class='getIde'>获取验证码</text>
+      <button>保存</button>
+    </form> 
+</view>
+
+

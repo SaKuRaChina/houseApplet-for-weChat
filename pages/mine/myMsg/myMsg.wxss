@@ -1,0 +1,8 @@
+/* pages/mine/myMsg/myMsg.wxss */
+
+page{background: #f3f5f7;}
+
+.eachMsg{padding: 36rpx 100rpx;position: relative;border-bottom: 1px solid #e1e2e3;}
+.eachMsg image{width: 40rpx;height: 40rpx;position: absolute;top: 47rpx;left: 40rpx;}
+.eachMsg text{display: block;line-height: 49rpx;font-size: 25rpx;}
+.eachMsg .msgCont{color: #656564;}

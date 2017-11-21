@@ -1,0 +1,39 @@
+<!--pages/mine/myInfo/myInfo.wxml-->
+
+<view class='userInfo'>
+    <view class='userName'>
+        <text class='userTitle'>用户名</text>
+        <text class='rightPos' wx:if="{{ !willChange }}">豆子</text>
+        <input wx:if="{{ willChange }}" placeholder='为了测试'></input>
+    </view>
+    <view class='userName'>
+        <text class='userTitle'>姓名</text>
+        <text class='rightPos'>徐丽</text>
+    </view>
+    <view class='userName'>
+        <text class='userTitle'>身份证号</text>
+        <text class='rightPos'>110222********2523</text>
+    </view>
+    <view class='userName'>
+        <text class='userTitle'>银行卡号</text>
+        <text class='rightPos'>95588002********045</text>
+    </view>
+    <view class='userName' bindtap='toChangeTelFn'>
+        <text class='userTitle'>手机</text>
+        <text class='rightPos'>18288886666</text>
+        <text class='changeTel'>></text>
+    </view>
+    <view class='userName' bindtap='toChangeTelFn'>
+        <text class='userTitle'>QQ</text>
+        <text class='rightPos'>258485687</text>
+        <text class='changeTel'>></text>
+    </view>
+    <view class='userName' bindtap='toChangeTelFn'>
+        <text class='userTitle'>地区</text>
+        <text class='rightPos'>东城区</text>
+        <text class='changeTel'>></text>
+    </view>
+    <view class='saveChange'>
+        <button>保存</button>
+    </view>
+</view>

@@ -1,0 +1,123 @@
+<!--pages/search/searchDetail/searchDetail.wxml-->
+
+<swiper autoplay="true" interval="2000" circular indicator-dots indicator-active-color="#016737" width="750" height="360">
+  <block>
+    <swiper-item width="750" height="360">
+      <image src="/images/banner.jpg" class="slide-image"/>
+    </swiper-item>
+    <swiper-item width="750" height="360">
+      <image src="/images/banner.jpg" class="slide-image"/>
+    </swiper-item>
+    <swiper-item width="750" height="360">
+      <image src="/images/banner.jpg" class="slide-image"/>
+    </swiper-item>
+     <swiper-item width="750" height="360">
+      <image src="/images/banner.jpg" class="slide-image"/>
+    </swiper-item>
+  </block>
+</swiper>
+
+<view class='orderList'>
+    <text class='code'>编号：1365</text>
+    <text class='h3'>葡萄庄园2</text>
+    <text class='support'>拎包入住</text>
+    <text class='aboutPay'>240元/晚</text>
+</view>
+
+<view class='orderMap'>
+    <text>新世纪百货商店西东兴隆街54号</text>
+    <view>
+        <map id='map' longitude="116.422888" latitude="39.90681" markers="{{markers}}" show-location></map>
+    </view>
+</view>
+
+
+<view class='orderDesc'>
+    <view class='readyTab'>
+        <view class='houseTitle'>
+            <text>房间描述</text>
+        </view>
+        <view class='houseDesc'>
+            <view class='houseType'>
+                <text>房屋类型：租房</text>
+                <text>房间格局：一室一厅</text>
+                <text>床型：大双人床</text>
+                <text>发票：不提供</text>
+                <text>入住时间：14：00</text>
+                <text>退房时间：12：00</text>
+            </view>
+            <view class='houstPosition'>
+                <text class='positionTitle'>详细介绍</text>
+                <text>交通便利地铁2号、5号、7号直达；适合陪护住宿！ 公寓旅行、就医、就学等条件，适合不同需求！</text>
+            </view>
+            <view class='houstPosition'>
+                <text class='positionTitle'>地理位置</text>
+                <text>新世纪百货商场西东兴隆街54号</text>
+            </view>
+            <view class='houstPosition'>
+                <text class='positionTitle'>推荐理由</text>
+                <text>交通便利地铁2号、5号、7号直达；适合陪护住宿！ 公寓旅行、就医、就学等条件，适合不同需求！</text>
+            </view>
+        </view>
+    </view>
+    <view class='readyTab'>
+        <view class='houseTitle'>
+            <text>配套设施</text>
+        </view>
+        <view class='houseDesc'>
+            <view class='houseFacility'>
+               <checkbox-group>
+                  <label class="checkbox" wx:for="{{ facilityItems }}">
+                      <checkbox value="{{item.name}}" checked="{{item.checked}}"  disabled= 'true'/>{{item.value}}
+                  </label>
+              </checkbox-group>
+            </view>
+        </view>
+    </view>
+    <view class='readyTab'>
+        <view class='houseTitle'>
+            <text>注意事项</text>
+        </view>
+        <view class='houseDesc'>
+           <text class='notice'>* 我是注意事项</text>
+        </view>
+    </view>   
+    <view class='readyTab'>
+        <view class='houseTitle'>
+            <text>评论</text>
+        </view>
+        <view class='houseDesc'>
+           <view class='comment'>
+              <view class='totalComment'>
+                  <text>共 6 条</text>
+                  <navigator url='/pages/search/searchDetail/comment/comment'>显示所有</navigator>
+              </view>
+              <view class='eachComment'>
+                  <text class='commentName'>风景</text>
+                  <text class='commentDate'>2015-09-06 02:51:27</text>
+                  <text class='commentText'>跟家人一起来度假来的，房子非常不错，床单干净整洁，床很舒适，而且还配备了自动麻将机，闲暇之余还能跟家人玩会麻将，很是自在</text>
+              </view>
+           </view>
+        </view>
+    </view>   
+</view>
+
+
+<view class='aboutHost'>
+    <view class='hostInfo'>
+        <image class='hostImg' src='/images/hostImg.jpg'></image>
+        <view>
+            <text>房东：王岩</text>
+            <image src='/images/credit.png' class='creditImg'></image>
+        </view>
+        <view>
+            <text>电话：13401087732</text>
+            <image src='/images/phone.png' class='telImg'></image>
+        </view>
+    </view>
+    <view class='thisPrice'>
+       <text>240元</text>/晚
+       <text class='connectHost' bindtap='connectHostFn'>联系房东</text>
+       <text class='reserveHouse' bindtap='toOrderFn'>立即预约</text>
+    </view>
+</view>

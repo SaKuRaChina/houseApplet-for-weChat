@@ -1,0 +1,42 @@
+<!--pages/mine/myApprove/myApprove.wxml-->
+
+<view class='unapprove' wx:if="{{ !isHostApprove }}">
+  <form class='orderDesc'>
+    <label>真实姓名：</label><input value=''></input>
+    <label>身份证号：</label><input value=''></input>
+    <view class='creditImg'>
+        <view class='creditTitle'>身份证正面照</view>
+        <view class='getPic'>
+            <image src='/images/camera.png' class='camera' wx:if="{{ isFrontShow }}" bindtap='idFrontShow'></image>
+            <image src='{{ tempFrontPaths }}' wx:if="{{ !isFrontShow }}" class='cameraShow'></image>
+        </view>
+    </view>
+    <view class='creditImg'>
+        <view class='creditTitle'>身份证反面照</view>
+        <view class='getPic'>
+            <image src='/images/camera.png' class='camera' wx:if="{{ isBackShow }}" bindtap='idBackShow'></image>
+            <image src='{{ tempBackPaths }}' wx:if="{{ !isBackShow }}" class='cameraShow'></image>
+        </view>
+    </view>
+    <view class='changeCard' bindtap='toAddCard'>
+        <text>我的银行卡</text>
+        <text class='cardNum'>0张 > </text>
+    </view>
+    <button>确认提交</button>
+  </form>
+</view>
+
+<view class='approved' wx:if="{{ isHostApprove }}">
+  <view class='userName'>
+      <text class='userTitle'>真实姓名</text>
+      <text class='rightPos'>徐丽</text>
+  </view>
+  <view class='userName'>
+      <text class='userTitle'>身份证号</text>
+      <text class='rightPos'>110222********2523</text>
+  </view>
+   <view class='changeCard' bindtap='toAddCard'>
+        <text>我的银行卡</text>
+        <text class='cardNum'>0张 > </text>
+    </view>
+</view>

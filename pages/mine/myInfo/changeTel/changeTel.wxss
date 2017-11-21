@@ -1,0 +1,11 @@
+/* pages/mine/myInfo/changeTel/changeTel.wxss */
+
+page{background: #e4e4e4;}
+
+.contain{padding-top: 60rpx;padding-left: 0;margin-left: 0}
+.contain image{width: 50rpx;height: 50rpx;position: absolute;z-index: 6;
+}
+.contain input{width: 660rpx;height:100rpx;line-height: 100rpx;font-size: 28rpx;background: #fff;margin-bottom:30rpx; padding-left: 30rpx;margin-left: 30rpx;}
+.contain .telImg{top: 82rpx;right: 55rpx;}
+.contain .getIde{position: absolute;top: 220rpx;right: 55rpx;color: #a4a4a3;font-size: 30rpx;text-decoration: underline;z-index: 6}
+.contain button{width: 690rpx;margin-top: 55rpx;background: #016737;color: #fff;font-size: 30rpx;height: 90rpx;line-height: 90rpx;}

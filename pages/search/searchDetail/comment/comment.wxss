@@ -1,0 +1,11 @@
+/* pages/search/searchDetail/comment/comment.wxss */
+
+.clearfix::after{content: '';display: block;height: 0;visibility: hidden;clear: both;}
+
+.eachComment{padding-top: 38rpx;padding: 0 25rpx;border-bottom: 1px solid #d4d3d7;}
+.eachComment image{width: 86rpx;height: 86rpx;border-radius: 50%;float: left;margin: 40rpx 20rpx;}
+.commentDetail{padding-top: 35rpx;width: 570rpx;float: right;}
+.commentName,.commentDate{font-size: 30rpx;height: 66rpx;line-height: 66rpx;display: inline-block;}
+.commentName{font-weight: bold;width:245rpx ;}
+.commentDate{text-align: right;width:300rpx;color: #7c7c7b;}
+.commentText{font-size: 28rpx;line-height: 38rpx;padding-bottom: 15rpx;display: block;}

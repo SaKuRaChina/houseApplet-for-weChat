@@ -1,0 +1,35 @@
+<!--pages/mine/myApprove/changeBank/changeBank.wxml-->
+
+
+<view class='creditImg'>
+    <view class='creditNum'>
+      <text>**** **** **** 8545</text>
+  </view>
+
+</view>
+
+<view class='notice'>
+    <text>*只可绑定借记卡</text>
+</view>
+
+<view class='personalCredit'>
+    <view class='eachItem'>
+        <image src='/images/people.png'></image>
+        <input value='杨光' disabled></input>
+    </view>
+    <view class='eachItem'>
+        <image src='/images/bankCard.png'></image>
+        <input value='' placeholder='请输入您的借记卡号'></input>
+    </view>
+    <view class='eachItem'>
+        <image src='/images/mobile.png'></image>
+        <input value='' placeholder='银行卡预留手机号'></input>
+    </view>
+    <view class='eachItem'>
+        <image src=''></image>
+        <input value='' placeholder='请输入短信验证码'></input>
+        <button>获取验证码</button>
+    </view>
+
+    <button class='sure'>确认</button>
+</view>

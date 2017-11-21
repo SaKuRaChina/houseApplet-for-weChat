@@ -1,0 +1,9 @@
+/* pages/order/orderCancel/orderCancel.wxss */
+
+
+.container{padding-top: 73rpx;}
+text{font-size: 30rpx;color: #016737;display: block;line-height: 48rpx;text-align: center;width: 600rpx;margin-left:78rpx; }
+
+textarea{width: 695rpx;height: 500rpx;border: 1px solid #e1e1e1;box-shadow: 0 0 3rpx #e1e1e1 inset;margin-top: 40rpx;}
+
+button{margin-top: 100rpx;background: #016737;color: #fff;}

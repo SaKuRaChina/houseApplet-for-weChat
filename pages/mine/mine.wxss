@@ -1,0 +1,35 @@
+/* pages/mine/mine.wxss */
+
+page{background: #e4e4e4;}
+
+.logOut{padding-top: 77rpx;position: relative;}
+.logOut radio-group{font-size: 28rpx;}
+.logOut radio{margin: 0 40rpx 110rpx 30rpx;}
+.logOut image{width: 50rpx;height: 50rpx;position: absolute;z-index: 6;
+}
+.logOut input{width: 660rpx;height:100rpx;line-height: 100rpx;font-size: 28rpx;background: #fff;margin-bottom:30rpx; padding-left: 30rpx;margin-left: 30rpx;}
+.logOut .telImg{top: 260rpx;right: 55rpx;}
+.logOut .passImg{top: 390rpx;right: 55rpx;}
+.logOut button{width: 690rpx;margin-top: 55rpx;background: #016737;color: #fff;font-size: 30rpx;height: 90rpx;line-height: 90rpx;display:inline-block;}
+
+.forgetPass{height: 135rpx;line-height: 135rpx;color: #fd7f04;text-decoration: underline;padding-left: 43rpx;font-size: 28rpx;}
+.registAccount{font-size: 28rpx;padding-left: 43rpx; }
+.registAccount navigator{display: inline-block;color:#016737; }
+
+
+.accountInfo{padding-top: 18rpx;text-align: center;padding-bottom: 35rpx;background: #fff;border: 1px solid #ebebec;}
+.accountInfo image{height: 140rpx;width: 140rpx;border-radius: 50%;}
+.accountInfo .accountName{display: block;height: 80rpx;line-height: 80rpx;font-weight: bold;}
+.approveAccount image{width: 105rpx;height: 34rpx;border-radius: 0;margin-left: 10rpx;vertical-align: middle;}
+.approveAccount text{font-size: 28rpx;height: 36rpx;line-height: 36rpx;color: #878686}
+
+
+.personalInfo{margin-top: 40rpx;}
+.eachTip{padding-left: 35rpx;height: 97rpx;line-height: 97rpx;font-size: 30rpx;color: #585655;background: #fff;border-bottom: 1px solid #e7e7e7;}
+.eachTip image{width: 40rpx;height: 40rpx;vertical-align: middle;margin-right: 20rpx;}
+.eachTip .toNewPage{float: right;margin-right: 34rpx;color: #b2b2b2;}
+.myMargin{margin-top: 22rpx;}
+.eachTip .infoNum{display: inline-block;margin-right: 15rpx;height: 40rpx;width: 40rpx;line-height: 40rpx;border-radius: 50%;color: #fff;font-size: 28rpx;background: #fb0707;text-align: center;float: right;margin-top: 30rpx;}
+
+.logOutBtn{margin-top: 20rpx;padding: 200rpx 30rpx;background: #fff;}
+.logOutBtn button{background: #016737;color: #fff;}

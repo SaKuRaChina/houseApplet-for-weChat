@@ -1,0 +1,29 @@
+/* pages/search/searchDetail/orderNow/orderNow.wxss */
+
+page{background: #efeff4;}
+
+.orderList{padding: 0 25rpx;margin-bottom: 25rpx;background: #fff;position: relative;height: auto;}
+.orderList .h3{font-size: 28rpx;color: #333333;display: block;height: 48rpx;line-height: 48rpx;font-weight: bold;}
+.orderList .code{font-size: 28rpx;color: #016737;display: block;height: 48rpx;line-height: 48rpx;font-weight: bold;}
+.orderList .support{font-size: 28rpx;color: #016737;display: block;height: 48rpx;line-height: 48rpx;}
+.orderList .aboutPay{position: absolute;top: 56rpx;left: 190rpx;font-size: 24rpx;color: #fb0404;}
+
+
+.orderDays{height: 230rpx;margin-top: 25rpx;background: #fff;border-top: 2rpx solid #d8d7dc;border-bottom: 2rpx solid #d8d7dc;}
+.orderDays image{float: left;width:75rpx;height: 75rpx;margin: 75rpx 40rpx;}
+.orderDays .stayDays{font-size: 28rpx;float: left;padding-top: 11rpx;width: 378rpx;}
+.orderDays .stayDays text{line-height: 45rpx;color: #808080;}
+.orderDays .stayDays picker{line-height: 57rpx;}
+.orderDays .stayDays .borbtm{border-bottom: 1px solid #cdcdcd;}
+.orderDays .orderTotal{float: left;font-size: 28rpx;color: #529a06;padding-top: 100rpx;padding-left: 65rpx;}
+
+
+.orderPrice{padding: 36rpx 0 30rpx 26rpx; margin-top: 25rpx;background: #fff;border-top: 2rpx solid #d8d7dc;border-bottom: 2rpx solid #d8d7dc;font-size: 30rpx;}
+.orderPrice text{display: block;color: #181818;}
+.orderPrice label{width: 200rpx;display: inline-block;height: 63rpx;line-height: 63rpx;vertical-align: top;}
+.orderPrice input{width: 520rpx;display: inline-block;height: 63rpx;line-height: 63rpx;}
+
+
+.orderSubmit{padding: 0 26rpx 140rpx;background: #fff;border-top: 1px solid #d8d7dc;line-height: 145rpx;height: 145rpx;font-size: 28rpx;}
+.orderSubmit text {color: #529a06;}
+.orderSubmit button{color: #fff;background: #016737;}

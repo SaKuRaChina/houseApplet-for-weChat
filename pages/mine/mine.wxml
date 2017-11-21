@@ -1,0 +1,70 @@
+<!--pages/mine/mine.wxml-->
+
+<!-- <web-view  src="https://www.mlokw.com"></web-view> -->
+
+
+ <view class='logOut' wx:if="{{ isLogIn }}">
+    <form>
+        <radio-group>
+            <label wx:for='{{ cusItems }}'>
+            <radio value='{{ item.name }}' checked='{{ item.checked }}' disabled='{{ item.disabled }}'>{{ item.value }}</radio>
+            </label>
+        </radio-group>
+        <input class='tel' type='number' placeholder='手机号'></input>
+        <image class='telImg' src='/images/mine-a.png'></image>
+        <input class='pass' password placeholder='密码'></input>
+        <image class='passImg' src='/images/passcode.png'></image>
+        <button>立即登录</button>
+    </form> 
+    <navigator class='forgetPass' url='/pages/mine/losePass/losePass'>忘记密码</navigator>
+    <view class='registAccount'>还没有账号，现在就去<navigator url='/pages/mine/register/register'>注册帐号</navigator></view>
+</view>
+
+
+<view class='logIn' wx:if="{{ !isLogIn }}">
+    <view class='accountInfo'>
+        <image src='/images/hostAccount.png'></image>
+        <text class='accountName'>阳光豆子</text>
+        <view class='approveAccount'>
+            <text>实名认证</text>
+            <image src='/images/unapprove.png' wx:if="{{ !isapprove }}"></image>
+            <image src='/images/approved.png' wx:if="{{ isapprove }}"></image>
+        </view>
+    </view>
+
+    <view class='personalInfo'>
+        <view class='eachTip' bindtap='toMyInfoFn'>
+            <image src='/images/myInfoTip.png'></image>
+            <text>个人信息</text>
+            <text class='toNewPage'>></text>
+        </view>
+        <view class='eachTip' bindtap='toMyPassFn'>
+            <image src='/images/myPassTip.png'></image>
+            <text>修改密码</text>
+            <text class='toNewPage'>></text>
+        </view>
+    </view>
+
+    <view class='eachTip myMargin' bindtap='toMyMsgFn'>
+        <image src='/images/myTrumpetTip.png'></image>
+        <text>消息中心</text>
+        <text class='toNewPage'>></text>
+        <text class='infoNum'>1</text>
+    </view>
+
+    <view class='eachTip myMargin' bindtap='toMyHouseFn'>
+        <image src='/images/myManageTip.png'></image>
+        <text>房源管理</text>
+        <text class='toNewPage'>></text>
+    </view>
+
+    <view class='eachTip myMargin' bindtap='toMyApproveFn'>
+        <image src='/images/myApproveTip.png'></image>
+        <text>信息认证</text>
+        <text class='toNewPage'>></text>
+    </view>
+
+    <view class='logOutBtn'>
+        <button>退出登录</button>
+    </view>
+</view> 

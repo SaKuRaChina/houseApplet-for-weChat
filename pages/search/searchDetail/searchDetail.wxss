@@ -1,0 +1,51 @@
+/* pages/search/searchDetail/searchDetail.wxss */
+
+page{background: #efeff4;padding-bottom: 350rpx;}
+
+swiper-item image{width: 750rpx;}
+
+.orderList{padding: 0 25rpx;margin-bottom: 25rpx;background: #fff;position: relative;height: auto;}
+.orderList .h3{font-size: 28rpx;color: #333333;display: block;height: 48rpx;line-height: 48rpx;font-weight: bold;}
+.orderList .code{font-size: 28rpx;color: #016737;display: block;height: 48rpx;line-height: 48rpx;font-weight: bold;}
+.orderList .support{font-size: 28rpx;color: #016737;display: block;height: 48rpx;line-height: 48rpx;}
+.orderList .aboutPay{position: absolute;top: 56rpx;left: 190rpx;font-size: 24rpx;color: #fb0404;}
+
+.orderMap{background: #fff;margin-top: 25rpx; padding: 0 20rpx 20rpx;border-top: 2rpx solid #d8d7dc;border-bottom: 2rpx solid #d8d7dc;}
+.orderMap text{height: 74rpx;line-height: 74rpx;font-size: 28rpx;}
+.orderMap map{width: 710rpx;}
+
+
+.readyTab{padding-top:42rpx;background: #fff;}
+.readyTab text{display: block;}
+.houseTitle{padding: 10rpx 13rpx;font-size: 30rpx;color: #529a06;position: relative;background: #e5e6eb;}
+.houseTitle image{width: 27rpx;height: 27rpx;position: absolute;top: 13rpx;right: 15rpx;}
+.houseTitle text{display: block;border-left: 6rpx solid #529a06;padding-left: 5rpx;}
+.houseType text{width: 345rpx;display: inline-block;padding-left: 30rpx;line-height: 41rpx;font-size: 26rpx;}
+.houstPosition text{padding: 20rpx;font-size: 26rpx;line-height: 32rpx;}
+.houstPosition .positionTitle{font-size: 28rpx;color: #529a06;line-height: 50rpx;}
+checkbox-group {height:400rpx;font-size: 26rpx; }
+.checkbox{width: 345rpx;display: block;float: left;height: 64rpx;line-height: 64rpx;padding-left:30rpx; }
+.houseDesc .notice{font-size: 26rpx;line-height: 32rpx;padding: 40rpx 30rpx;}
+.comment{position: relative;}
+.totalComment{position: absolute;top: -40rpx;right: 20rpx;font-size: 25rpx;}
+.totalComment text{display: inline-block;}
+.totalComment navigator{display: inline-block;color: #529a06;text-decoration: underline;margin-left: 25rpx;}
+
+
+.eachComment{padding-top: 38rpx;padding: 0 25rpx;}
+.readyTab .commentName,.readyTab .commentDate{display: inline-block;width:350rpx ;font-size: 28rpx;height: 66rpx;line-height: 66rpx;}
+.readyTab .commentName{font-weight: bold}
+.readyTab .commentDate{text-align: right;}
+.commentText{font-size: 26rpx;line-height: 38rpx;padding-bottom: 15rpx;}
+
+
+.aboutHost{position: fixed;bottom: 0;width: 750rpx;height:300rpx;background: #fff;}
+.hostInfo{padding: 22rpx 0; border-top: 1px solid #d7d6db; border-bottom: 1px solid #d7d6db;padding-left: 40rpx;}
+.hostImg{width: 120rpx;height: 120rpx;border-radius: 50%;margin-right: 42rpx;float: left;}
+.creditImg{width: 160rpx;height: 35rpx;}
+.telImg{width: 40rpx;height: 40rpx;}
+.aboutHost text{height: 63rpx;line-height: 63rpx;font-size: 30rpx;vertical-align: middle;}
+.thisPrice{font-size: 30rpx;vertical-align: bottom;padding-top: 40rpx;padding-left: 40rpx;}
+.thisPrice text{font-size: 34rpx;}
+.connectHost,.reserveHouse{width: 160rpx;height: 70rpx;line-height: 70rpx;background: #529a06;border-radius: 10rpx;color: #fff;font-size: 24rpx;display: inline-block;text-align: center;}
+.connectHost{margin-left: 150rpx;margin-right: 35rpx;}

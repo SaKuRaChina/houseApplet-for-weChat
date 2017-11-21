@@ -1,0 +1,74 @@
+<!--pages/mine/myHouse/myHouse.wxml-->
+
+<view class='houseContain'>
+    <view class='eachItem'>
+        <image src='/images/houseItem.png'></image>
+        <view class='aboutHouse'>
+            <view class='title'>
+                <text>租房　</text>
+                <text>租房　</text>
+                <text>编号：1365</text>
+            </view>
+            <view class='position'>
+                <text>国贸双井10号线苹果派小区苹果派小区</text>
+            </view>
+            <view class='releaseTime'>
+                <text>发布时间：2017-06-21 15:32:48</text>
+            </view>
+        </view>
+        <view class='houseStatus'>
+            <image src='/images/rented.png' wx:if="{{ isMyRent }}"></image>
+            <image src='/images/ordered.png' wx:if="{{ !isMyRent }}"></image>
+            <image src='/images/unrent.png' wx:if="{{ !isMyRent }}"></image>
+        </view>
+    </view>
+
+    <view class='eachItem'>
+        <image src='/images/houseItem.png'></image>
+        <view class='aboutHouse'>
+            <view class='title'>
+                <text>租房　</text>
+                <text>租房　</text>
+                <text>编号：1365</text>
+            </view>
+            <view class='position'>
+                <text>国贸双井10号线苹果派小区苹果派小区</text>
+            </view>
+            <view class='releaseTime'>
+                <text>发布时间：2017-06-21 15:32:48</text>
+            </view>
+        </view>
+        <view class='houseStatus'>
+            <image src='/images/rented.png' wx:if="{{ !isMyRent }}"></image>
+            <image src='/images/ordered.png' wx:if="{{ isMyRent }}"></image>
+            <image src='/images/unrent.png' wx:if="{{ !isMyRent }}"></image>
+        </view>
+    </view>
+
+    <view class='eachItem'>
+        <image src='/images/houseItem.png'></image>
+        <view class='aboutHouse'>
+            <view class='title'>
+                <text>租房　</text>
+                <text>租房　</text>
+                <text>编号：1365</text>
+            </view>
+            <view class='position'>
+                <text>国贸双井10号线苹果派小区苹果派小区</text>
+            </view>
+            <view class='releaseTime'>
+                <text>发布时间：2017-06-21 15:32:48</text>
+            </view>
+        </view>
+        <view class='houseStatus'>
+            <image src='/images/rented.png' wx:if="{{ !isMyRent }}"></image>
+            <image src='/images/ordered.png' wx:if="{{ !isMyRent }}"></image>
+            <image src='/images/unrent.png' wx:if="{{ isMyRent }}"></image>
+        </view>
+    </view>
+</view>
+
+
+<view class='addHouse' bindtap='addHouseFn'>
+    <button>新增房源</button>
+</view>

@@ -1,0 +1,102 @@
+<!--pages/order/order.wxml-->
+
+<view class='logOut' wx:if="{{ isLogIn }}">
+  <image src='/images/key.png'></image>
+  <text>您尚未注册或登录，点我</text>
+  <navigator>注册</navigator>　或
+  <navigator>登录</navigator>
+</view>
+
+<view class='logInOrder' wx:if="{{ !isLogIn }}">
+  <view class='orderTab' bindtap='onTabShow'>
+    <view class='TabEach {{ curIndex==0 ? "active" : "" }}' id='tab-each00' data-id='0'>
+      待支付
+      <text class='line'>|</text>
+      <text class='sum'>1</text>
+    </view>
+    <view class='TabEach {{ curIndex==1 ? "active" : "" }}' id='tab-each01' data-id='1'>
+      已支付
+      <text class='line'>|</text>
+      <text class='sum'>111</text>
+    </view>
+    <view class='TabEach {{ curIndex==2 ? "active" : "" }}' id='tab-each02' data-id='2'>
+      已结束
+      <text class='line'>|</text>
+      <text class='sum'>10</text>
+    </view>
+    <view class='TabEach {{ curIndex==3 ? "active" : "" }}' id='tab-each03' data-id='3'>
+      已取消
+      <text class='sum'>1</text>
+    </view>
+  </view>
+  <view class='orderCont'>
+    <view class='eachCont' wx:if="{{ curIndex==0}}">
+      <view class='orderList' wx:for="{{ unpayArr }}">
+        <navigator url='/pages/order/orderDetail/orderDetail'>
+          <text class='h3'>{{ item.title }}</text>
+          <text class='code'>编号：1365</text>
+          <view class='proDetail'>
+            <image src='{{ item.imageurls[0].url }}'></image>
+            <view class='aboutOrder'>
+              <text>订单编号：{{ item.id }}</text>
+              <text>下单时间：{{ item.pubDate }}</text>
+              <text>订单总价：￥630</text>
+            </view>
+            <image src='/images/right-icon.png' class='rightIcon'></image>
+          </view>
+        </navigator>
+      </view>
+    </view>
+    <view class='eachCont' wx:if="{{ curIndex==1}}">
+      <view class='orderList'>
+        <navigator url='/pages/order/orderDetail/orderDetail'>
+          <text class='h3'>葡萄庄园2</text>
+          <text class='code'>编号：1365</text>
+          <view class='proDetail'>
+            <image src='/images/order-img.jpg'></image>
+            <view class='aboutOrder'>
+              <text>订单编号：201706191654165236191654165236</text>
+              <text>下单时间：2017-06-19 16:54:16</text>
+              <text>订单总价：￥630</text>
+            </view>
+            <image src='/images/right-icon.png' class='rightIcon'></image>
+          </view>
+        </navigator>
+      </view>
+    </view>
+    <view class='eachCont' wx:if="{{ curIndex==2}}">
+      <view class='orderList'>
+        <navigator url='/pages/order/orderDetail/orderDetail'>
+          <text class='h3'>葡萄庄园3</text>
+          <text class='code'>编号：1365</text>
+          <view class='proDetail'>
+            <image src='/images/order-img.jpg'></image>
+            <view class='aboutOrder'>
+              <text>订单编号：201706191654165236191654165236</text>
+              <text>下单时间：2017-06-19 16:54:16</text>
+              <text>订单总价：￥630</text>
+            </view>
+            <image src='/images/right-icon.png' class='rightIcon'></image>
+          </view>
+        </navigator>
+      </view>
+    </view>
+    <view class='eachCont' wx:if="{{ curIndex==3}}">
+      <view class='orderList'>
+        <navigator url='/pages/order/orderDetail/orderDetail'>
+          <text class='h3'>葡萄庄园4</text>
+          <text class='code'>编号：1365</text>
+          <view class='proDetail'>
+            <image src='/images/order-img.jpg'></image>
+            <view class='aboutOrder'>
+              <text>订单编号：201706191654165236191654165236</text>
+              <text>下单时间：2017-06-19 16:54:16</text>
+              <text>订单总价：￥630</text>
+            </view>
+            <image src='/images/right-icon.png' class='rightIcon'></image>
+          </view>
+        </navigator>
+      </view>
+    </view>
+  </view>
+</view>

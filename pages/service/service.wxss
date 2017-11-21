@@ -1,0 +1,5 @@
+/* pages/service/service.wxss */
+
+.tel{text-align: center}
+.tel text{height: 200rpx;line-height: 200rpx;color: #016737;}
+.tel button{width: 700rpx;}

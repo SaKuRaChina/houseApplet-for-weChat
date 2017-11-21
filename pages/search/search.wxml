@@ -1,0 +1,158 @@
+<!--pages/search/search.wxml-->
+
+<view class='rentTab'>
+  <view class='rentTabTitle' bindtap='isDateClickFn'>日期</view>
+  <view class='rentDate' wx:if="{{ isDateClick }}">
+      <view class="section">
+        <picker mode="date" value="{{date1}}" start="2015-09-01" end="2050-12-31" bindchange="bindDateChange1">
+          <view class="picker">
+            入住时间: {{date1}}
+          </view>
+        </picker>
+      </view>
+      <view class="section">
+        <picker mode="date" value="{{date2}}" start="2015-09-01" end="2050-12-31" bindchange="bindDateChange2">
+          <view class="picker">
+            退房时间: {{date2}}
+          </view>
+        </picker>
+      </view>
+  </view>
+  <view class='rentTabTitle' bindtap='isAreaClickFn'>区域</view>
+  <view class='rentArea'  wx:if="{{ isAreaClick }}">
+      <view class='rentAreaList'>
+          <text>东城区</text>
+          <text>东城区</text>
+          <text>东城区</text>
+          <text>东城区</text>
+          <text>东城区</text>
+      </view>
+      <view class='rentAreaListDetail'>
+      <!-- 通过改变区县下的街道对应的array的数据实现切换  -->
+          <view>
+              <text class='street'>建国门街道</text>
+                <text>泡子和社区</text>
+                <text>泡子和社区</text>
+                <text>泡子和社区</text>
+                <text>泡子和社区</text>
+                <text>泡子和社区</text>
+          </view>
+          <view>
+              <text class='street'>建国门街道</text>
+                <text>泡子和社区</text>
+                <text>泡子和社区</text>
+                <text>泡子和社区</text>
+                <text>泡子和社区</text>
+          </view>
+          <view>
+              <text class='street'>建国门街道</text>
+                <text>泡子和社区</text>
+                <text>泡子和社区</text>
+                <text>泡子和社区</text>
+                <text>泡子和社区</text>
+                <text>泡子和社区</text>
+          </view>
+
+      </view>
+  </view>
+  <view class='rentTabTitle' bindtap='isOrderClickFn'>排序</view>
+  <view class='rentOrder'  wx:if="{{ isOrderClick }}">
+      <view>默认排序</view>
+      <view>价格最高</view>
+      <view>价格最低</view>
+  </view>
+  <view class='rentTabTitle' bindtap='isSelectClickFn'>筛选</view>
+  <view class='select'   wx:if="{{ isSelectClick }}">
+      <view class='selectType'>
+              <text class='selectTitle'>房间类型</text>
+              <text class='selectAll'>不限</text>
+              <view>
+                <text class='selectCond'>租房</text>
+                <text class='selectCond'>公寓</text>
+                <text class='selectCond'>旅游房</text>
+                <text class='selectCond'>买卖房</text>
+              </view>
+      </view>
+      <view class='selectType'>
+              <text class='selectTitle'>房间格局</text>
+              <text class='selectAll'>不限</text>
+              <view>
+                <text class='selectCond'>一室一厅</text>
+                <text class='selectCond'>两室一厅</text>
+                <text class='selectCond'>三室一厅</text>
+                <text class='selectCond'>三室两厅</text>
+              </view>
+      </view>
+      <view class='selectType'>
+              <text class='selectTitle'>价格</text>
+              <text class='selectAll'>不限</text>
+              <view>
+                <text class='selectCond'>150-300元</text>
+                <text class='selectCond'>300-600元</text>
+                <text class='selectCond'>600-1000元</text>
+                <text class='selectCond'>1000元以上</text>
+              </view>
+      </view>
+  </view>
+</view>
+
+<view class='rentLists'>
+  <view class='rentList'><navigator url='/pages/search/searchDetail/searchDetail'>
+    <swiper indicator-dots="true" >
+      <block wx:for="{{imgUrls}}">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image" width="750" height="392"/>
+        </swiper-item>
+      </block>
+    </swiper>
+    <view class='houseCont'>
+        <view class='houseName'>国贸双井10号线苹果派小区</view>
+        <view class='houseIntro'>
+            <text>两室一厅一卫</text> /
+            <text>家具家电齐全，拎包入住</text>
+        </view>
+        <view class='houseDiscuss'>
+            <image src='/images/rent.png'></image>
+            <text>日租</text>
+            <image src='/images/hammer.png'></image>
+            <text>130</text>
+            <image src='/images/chat.png'></image>
+            <text>168</text>
+        </view>
+    </view>
+    <view class='houseHost'>
+        <image src='/images/hostImg.jpg'></image>
+        <view>房主</view>
+    </view>
+    </navigator>
+  </view>
+  <view class='rentList'><navigator url='/pages/search/searchDetail/searchDetail'>
+    <swiper indicator-dots="true" >
+      <block wx:for="{{imgUrls}}">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image" width="750" height="392"/>
+        </swiper-item>
+      </block>
+    </swiper>
+    <view class='houseCont'>
+        <view class='houseName'>国贸双井10号线苹果派小区</view>
+        <view class='houseIntro'>
+            <text>两室一厅一卫</text> /
+            <text>家具家电齐全，拎包入住</text>
+        </view>
+        <view class='houseDiscuss'>
+            <image src='/images/rent.png'></image>
+            <text>日租</text>
+            <image src='/images/hammer.png'></image>
+            <text>130</text>
+            <image src='/images/chat.png'></image>
+            <text>168</text>
+        </view>
+    </view>
+    <view class='houseHost'>
+        <image src='/images/hostImg.jpg'></image>
+        <view>房主</view>
+    </view>
+    </navigator>
+  </view>
+</view>

@@ -1,0 +1,15 @@
+/* pages/mine/myApprove/changeBank/changeBank.wxss */
+
+page{background: #f3f3f3;}
+.creditImg{padding: 60rpx 15rpx;background: #fff;}
+.creditNum{ width: 720rpx; border-radius: 10rpx;background: #c65055;color: #fff;height: 220rpx;position: relative;}
+.creditNum text{position: absolute;bottom: 50rpx;right: 30rpx;font-size: 36rpx;}
+
+.notice{height: 116rpx;line-height: 116rpx;background: #f3f3f3;font-size: 28rpx;color: #ec0c0c;padding-left: 35rpx;}
+
+.eachItem{background: #fff}
+.eachItem image{height: 44rpx;width: 44rpx;margin: 30rpx;}
+.eachItem input{height: 100rpx;line-height: 100rpx;font-size: 32rpx;display: inline-block;width: 640rpx;border-bottom: 1px solid #e4e4e4;}
+.eachItem button{float: right;width: 205rpx;height: 70rpx;line-height: 70rpx;text-align: center;color: #fff;background: #529a06;margin-top: -100rpx;margin-right: 34rpx;font-size: 28rpx;}
+
+.personalCredit .sure{width: 690rpx;margin-top: 55rpx;background: #016737;color: #fff;font-size: 30rpx;height: 90rpx;line-height: 90rpx;}

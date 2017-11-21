@@ -1,0 +1,8 @@
+/* pages/search/searchDetail/dealSkill/dealSkill.wxss */
+
+page{background: #f4f5f9;}
+
+.skillContainer{padding: 30rpx;}
+.skillContainer text{display: block;}
+.skillContainer .skillTitle{font-size: 30rpx;height: 56rpx;line-height: 56rpx;}
+.skillContainer .skillCont{font-size: 28rpx;line-height: 50rpx;padding-bottom: 20rpx;text-indent: 40rpx;color: #5e5d61;}

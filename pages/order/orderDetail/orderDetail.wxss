@@ -1,0 +1,53 @@
+/* pages/order/orderDetail/orderDetail.wxss */
+
+
+page{background-color:#efeff4;}
+
+.orderList{padding: 0 25rpx;margin-bottom: 25rpx;background: #fff;position: relative;height: auto;}
+.orderList .h3{font-size: 28rpx;color: #333333;display: block;height: 66rpx;line-height: 66rpx;font-weight: bold;}
+.orderList .code{font-size: 28rpx;color: #016737;display: block;height: 37rpx;line-height: 37rpx;font-weight: bold;}
+.orderList .aboutPay{position: absolute;top: 56rpx;left: 190rpx;color: #f80202;font-size: 24rpx}
+.proDetail{height: 135rpx;padding: 20rpx 0;}
+.proDetail image{width: 180rpx;height: 135rpx;float: left}
+.proDetail .aboutOrder{float: left;width: 440rpx;padding: 0 65rpx 0 18rpx}
+.proDetail .aboutOrder text{font-size: 28rpx;color: #333333;display: block;line-height: 45rpx;overflow: hidden;height: 45rpx;word-break: break-all;}
+.proDetail .rightIcon{position: absolute;height: 50rpx;width: 50rpx;top: 160rpx;right: 30rpx;}
+
+
+.orderDays{height: 230rpx;margin-top: 25rpx;background: #fff;border-top: 2rpx solid #d8d7dc;border-bottom: 2rpx solid #d8d7dc;}
+.orderDays image{float: left;width:75rpx;height: 75rpx;margin: 75rpx 40rpx;}
+.orderDays .stayDays{font-size: 28rpx;float: left;padding-top: 11rpx;width: 378rpx;}
+.orderDays .stayDays text{line-height: 45rpx;color: #808080;}
+.orderDays .stayDays picker{line-height: 57rpx;}
+.orderDays .stayDays .borbtm{border-bottom: 1px solid #cdcdcd;}
+.orderDays .orderTotal{float: left;font-size: 28rpx;color: #529a06;padding-top: 100rpx;padding-left: 65rpx;}
+
+
+.orderMap{background: #fff;margin-top: 25rpx; padding: 0 20rpx 20rpx;border-top: 2rpx solid #d8d7dc;border-bottom: 2rpx solid #d8d7dc;}
+.orderMap text{height: 74rpx;line-height: 74rpx;font-size: 28rpx;}
+.orderMap map{width: 710rpx;}
+
+
+.orderPrice{padding: 36rpx 0 30rpx 26rpx; margin-top: 25rpx;background: #fff;border-top: 2rpx solid #d8d7dc;border-bottom: 2rpx solid #d8d7dc;}
+.orderPrice text{display: block;font-size: 30rpx;color: #181818;height: 63rpx;line-height: 63rpx;}
+
+
+.readyTab{padding-top:42rpx;background: #fff;}
+.readyTab text{display: block;}
+.houseTitle{padding: 10rpx 13rpx;font-size: 30rpx;color: #529a06;position: relative;background: #e5e6eb;}
+.houseTitle image{width: 27rpx;height: 27rpx;position: absolute;top: 13rpx;right: 15rpx;}
+.houseTitle text{display: block;border-left: 6rpx solid #529a06;padding-left: 5rpx;}
+.houseType text{width: 345rpx;display: inline-block;padding-left: 30rpx;line-height: 41rpx;font-size: 26rpx;}
+.houstPosition text{padding: 20rpx;font-size: 26rpx;line-height: 32rpx;}
+.houstPosition .positionTitle{font-size: 28rpx;color: #529a06;line-height: 50rpx;}
+checkbox-group {height:400rpx;font-size: 26rpx; }
+.checkbox{width: 345rpx;display: block;float: left;height: 64rpx;line-height: 64rpx;padding-left:30rpx; }
+.houseDesc .notice{font-size: 26rpx;line-height: 32rpx;padding: 40rpx 30rpx;}
+
+
+
+
+.orderSubmit{padding: 100rpx 26rpx;background: #fff;border-top: 1px solid #d8d7dc;}
+.orderSubmit textarea{width: 700rpx;border: 1rpx solid #e1e1e1; box-shadow: 2rpx 2rpx 5rpx #e1e1e1 inset;margin-bottom:105rpx;font-size: 30rpx;line-height: 35rpx; }
+.orderSubmit label{line-height: 99rpx}
+.orderSubmit button{color: #fff;background: #016737}

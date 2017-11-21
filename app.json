@@ -1,0 +1,72 @@
+{
+  "pages":[
+   
+    "pages/index/index",
+    "pages/search/search",
+    "pages/search/searchDetail/orderNow/orderNow",
+    "pages/order/order",
+    "pages/order/orderDetail/orderDetail",
+    "pages/service/service",
+    "pages/type/type",
+    "pages/search/searchDetail/searchDetail",
+    "pages/search/searchDetail/comment/comment",
+    "pages/search/searchDetail/dealSkill/dealSkill",
+    "pages/order/orderCancel/orderCancel",
+    "pages/mine/mine",
+    "pages/mine/losePass/losePass",
+    "pages/mine/register/register",
+    "pages/mine/myInfo/myInfo",
+    "pages/mine/myInfo/changeTel/changeTel",
+    "pages/mine/myPass/myPass",
+    "pages/mine/myMsg/myMsg",
+    "pages/mine/myHouse/myHouse",
+    "pages/mine/myHouse/addHouse/addHouse",
+    "pages/mine/myApprove/myApprove",
+    "pages/mine/myApprove/changeBank/changeBank",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#016737",
+    "navigationBarTitleText": "信鸽",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh":true
+  },
+  "tabBar": {
+    "color":"#888888",
+    "selectedColor":"#016737",
+    "backgroundColor":"white",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "images/home.png",
+      "selectedIconPath": "images/home-a.png"
+    },
+    {
+      "pagePath": "pages/service/service",
+      "text": "客服",
+      "iconPath": "images/service.png",
+      "selectedIconPath": "images/service-a.png"
+    },
+    {
+      "pagePath": "pages/type/type",
+      "text": "分类",
+      "iconPath": "images/type.png",
+      "selectedIconPath": "images/type-a.png"
+    },
+    {
+      "pagePath": "pages/order/order",
+      "text": "订单",
+      "iconPath": "images/order.png",
+      "selectedIconPath": "images/order-a.png"
+    },
+    {
+      "pagePath": "pages/mine/mine",
+      "text": "我的",
+      "iconPath": "images/mine.png",
+      "selectedIconPath": "images/mine-a.png"
+    }
+    ],
+    "position":"bottom"
+  }
+}

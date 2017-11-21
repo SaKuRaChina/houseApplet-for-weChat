@@ -1,0 +1,14 @@
+<!--pages/mine/myMsg/myMsg.wxml-->
+
+<view class='msgs'>
+    <view class='eachMsg'>
+        <image src='/images/msgAlert.png'></image>
+        <text class='msgCont'>恭喜您注册成功！注册时间2017/06/21/9:58:55</text>
+        <text class='msgTime'>2017/06/21/9:58:55</text>
+    </view>
+    <view class='eachMsg'>
+        <image src='/images/msgAlert.png'></image>
+        <text class='msgCont'>恭喜您注册成功！注册时间2017/06/21/9:58:55喜您注册成功！注册时间2017/06/21/9:58:5喜您注册成功！注册时间2017/06/21/9:58:5</text>
+        <text class='msgTime'>2017/06/21/9:58:55</text>
+    </view>
+</view>

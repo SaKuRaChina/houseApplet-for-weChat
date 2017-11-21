@@ -1,0 +1,13 @@
+/* pages/mine/myInfo/myInfo.wxss */
+
+page{border-top: 25rpx solid #e9e9e9;}
+.userName{height: 110rpx;line-height: 110rpx;font-size: 30rpx;padding-left: 27rpx;border-bottom: 1px solid #e4e4e4;}
+.userName .userTitle{color: #757474;}
+.userName text{display: inline-block;}
+.userName .rightPos{text-align: right;width: 570rpx;}
+.userName input{display:inline-block;width: 570rpx;height: 110rpx;line-height: 110rpx;float: right;}
+.userName .changeTel{float: right;color: #929292;margin-right: 27rpx;}
+
+
+.saveChange{margin-top: 20rpx;padding: 200rpx 30rpx;background: #fff;}
+.saveChange button{background: #016737;color: #fff;}

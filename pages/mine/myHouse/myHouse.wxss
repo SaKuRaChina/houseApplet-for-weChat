@@ -1,0 +1,12 @@
+/* pages/mine/myHouse/myHouse.wxss */
+
+.eachItem{padding: 43rpx 20rpx 22rpx 20rpx;height: 120rpx;border-bottom: 1px solid #f6f6f6; }
+.eachItem image{width: 156rpx;height: 100rpx;float: left;}
+.aboutHouse{width: 400rpx;padding-left: 14rpx;float: left; }
+.title{font-size: 32rpx;color: #529a06;overflow: hidden;height: 42rpx;}
+.position{font-size: 30rpx;overflow: hidden;height: 42rpx;}
+.releaseTime{font-size: 25rpx;color: #777777;overflow: hidden;height: 42rpx;}
+.houseStatus image{width: 80rpx;height: 50rpx;float: left;margin-left: 40rpx;margin-top: 40rpx;}
+
+.addHouse{padding-top: 60rpx;padding-left: 0;margin-left: 0}
+.addHouse button{width: 690rpx;margin-top: 55rpx;background: #016737;color: #fff;font-size: 30rpx;height: 90rpx;line-height: 90rpx;}

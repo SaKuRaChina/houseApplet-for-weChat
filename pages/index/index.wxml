@@ -1,0 +1,81 @@
+<!--index.wxml-->
+<view class='header'>
+     <image src='/images/bannerImg.jpg'></image> 
+    <view class='searchBox'>
+        <image src='/images/search.png'></image>
+        <input placeholder='搜索'></input>
+    </view>
+    <view class='headerBottom'>
+        <navigator url='/pages/search/search'>家庭公寓</navigator>
+        <navigator url='/pages/search/search'>业主直租</navigator>
+        <navigator url='/pages/search/search'>找信鸽</navigator>
+    </view>
+</view>
+
+
+<view class='indexLog'>
+  <navigator bindtap='navTab'>
+      <image src='/images/index-rent-log.png'></image>
+      <view>租客登录</view>
+  </navigator>
+  <navigator bindtap='navTab'>
+      <image src='/images/index-host-log.png'></image>
+      <view>房主登录</view>
+  </navigator>
+  <navigator>
+      <image src='/images/index-agent-log.png'></image>
+      <view>经纪人登录</view>
+  </navigator>
+</view>
+
+
+<view class='fastSearch'>
+    <view class='fastEach'>
+        <image src='/images/index-fast-1.jpg'></image>
+        <navigator class='fastCont' url='/pages/search/search'>
+          <text class='fastTitle'>租房</text>
+          <text class='fastInfo'>信鸽租房</text>
+          <text class='fastInfo'>灵活，日租，月租，季度租，整租</text>
+          <view class='tlPos'></view>
+          <view class='trPos'></view>
+          <view class='blPos'></view>
+          <view class='brPos'></view>
+        </navigator>
+    </view>
+    <view class='fastEach'>
+        <image src='/images/index-fast-2.jpg'></image>
+        <navigator class='fastCont'  url='/pages/search/search'>
+          <text class='fastTitle'>公寓</text>
+          <text class='fastInfo'>同样是公寓</text>
+          <text class='fastInfo'>看看信鸽公寓</text>
+          <view class='tlPos'></view>
+          <view class='trPos'></view>
+          <view class='blPos'></view>
+          <view class='brPos'></view>
+         </navigator>
+    </view>
+    <view class='fastEach'>
+        <image src='/images/index-fast-3.jpg'></image>
+        <navigator class='fastCont'  url='/pages/search/search'>
+          <text class='fastTitle'>旅游房</text>
+          <text class='fastInfo'>来北京旅游不用住酒店</text>
+          <text class='fastInfo'>信鸽带你住旅游房</text>
+          <view class='tlPos'></view>
+          <view class='trPos'></view>
+          <view class='blPos'></view>
+          <view class='brPos'></view>
+         </navigator>
+    </view>
+    <view class='fastEach'>
+        <image src='/images/index-fast-4.jpg'></image>
+        <navigator class='fastCont'  url='/pages/search/search'>
+          <text class='fastTitle'>买卖房</text>
+          <text class='fastInfo'>服务好，机制更完善</text>
+          <text class='fastInfo'></text>
+          <view class='tlPos'></view>
+          <view class='trPos'></view>
+          <view class='blPos'></view>
+          <view class='brPos'></view>
+         </navigator>
+    </view>
+</view>

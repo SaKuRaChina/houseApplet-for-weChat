@@ -1,0 +1,11 @@
+<!--pages/search/searchDetail/dealSkill/dealSkill.wxml-->
+
+<view class='skillContainer'>
+    <text class='skillTitle'>房客退订规则</text>
+    <text class='skillCont'>当客户交付房屋订金后，因个人原因取消订房按照以下规则进行退订：</text>
+    <text class='skillCont'>1.房东原因取消预订的，订金将全额退还给房客</text>
+    <text class='skillCont'>2.房客交付订金，没有确定入住房间和入住日期，且未告知联系方式：订单取消，订金全额返回，无任何费用</text>
+    <text class='skillCont'>3.房客交付订金，确定入住时间和房间，美租网并已通知房东保留房间：提前天取消订单，扣除20％房费定金作为违约金</text>
+    <text class='skillCont'>4房客当日预定当日入住，但当日尚未入住，就取消订单，全额扣除天房屋订金（如：房客预定1月10日入住房客在1月10日取消订单，扣除天订金作为违约金)
+</text>
+</view>

@@ -1,0 +1,24 @@
+/* pages/order/order.wxss */
+
+.logOut{text-align: center;padding:200rpx 0;}
+.logOut image{width: 100rpx;height: 100rpx}
+.logOut navigator{display: inline-block;color:#016737;}
+.logOut text{display: block}
+
+
+.orderTab{height:95rpx; }
+.TabEach{float: left;width: 186rpx;text-align: center;font-size: 28rpx;margin: 30rpx 0 0;height: 40rpx;line-height: 40rpx;border-bottom: 3px solid transparent;padding-bottom: 22rpx;position: relative;text-decoration: underline; }
+/* .rightNon{border-right: none;} */
+.orderTab .active{color: #016737;border-bottom:3px solid #016737;}
+.TabEach .line{position: absolute;top: 0;right: 0;color: #e6e7ec}
+.TabEach .sum{position: absolute;top: -20rpx;right: 25rpx;display: block;background: #fb0707;color: #fff;min-width: 40rpx;height: 40rpx;border-radius: 30rpx;}
+
+.orderCont{background: #efeff4;padding-top: 10rpx;}
+.orderList{padding: 0 25rpx;margin: 20rpx 0;background: #fff;position: relative;height: auto;}
+.orderList .h3{font-size: 28rpx;color: #333333;display: block;height: 66rpx;line-height: 66rpx;font-weight: bold;overflow: hidden;}
+.orderList .code{font-size: 28rpx;color: #016737;display: block;height: 37rpx;line-height: 37rpx;font-weight: bold;}
+.proDetail{height: 135rpx;padding: 20rpx 0;}
+.proDetail image{width: 180rpx;height: 135rpx;float: left}
+.proDetail .aboutOrder{float: left;width: 440rpx;padding: 0 65rpx 0 18rpx}
+.proDetail .aboutOrder text{font-size: 28rpx;color: #333333;display: block;line-height: 45rpx;overflow: hidden;height: 45rpx;word-break: break-all;}
+.proDetail .rightIcon{position: absolute;height: 50rpx;width: 50rpx;top: 140rpx;right: 30rpx;}

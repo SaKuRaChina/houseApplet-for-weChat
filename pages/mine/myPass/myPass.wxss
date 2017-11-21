@@ -1,0 +1,7 @@
+/* pages/mine/myPass/myPass.wxss */
+
+page{background: #e4e4e4;}
+
+.contain{padding-top: 60rpx;padding-left: 0;margin-left: 0}
+.contain input{width: 660rpx;height:100rpx;line-height: 100rpx;font-size: 28rpx;background: #fff;margin-bottom:30rpx; padding-left: 30rpx;margin-left: 30rpx;}
+.contain button{width: 690rpx;margin-top: 55rpx;background: #016737;color: #fff;font-size: 30rpx;height: 90rpx;line-height: 90rpx;}

@@ -1,0 +1,5 @@
+<!--pages/service/service.wxml-->
+<view class='tel'>
+  <text>联系我们：400 011 1111</text>
+  <button bindtap='telContact'>拨号</button>
+</view>
